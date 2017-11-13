@@ -71,6 +71,12 @@ public class TestListActivity extends AppCompatActivity {
 
     private DataModel tempModel;
 
+    /**
+     * 当前设置item数据
+     * @param tv_content
+     * @param tv_showAll
+     * @param dm
+     */
     private void setViewStatus(final TextView tv_content, final TextView tv_showAll, final DataModel dm) {
         if (dm.hasEllipsis == null) {
             tv_content.post(new Runnable() {
@@ -138,6 +144,12 @@ public class TestListActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 显示当前item文本全部或者收起
+     * @param tv_contnet
+     * @param tv_allShow
+     * @param dataModel
+     */
     private void showAllView(TextView tv_contnet, TextView tv_allShow,
                              DataModel dataModel) {
         if (dataModel.hasEllipsis) {
