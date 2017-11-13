@@ -101,7 +101,6 @@ public class TestListActivity extends AppCompatActivity {
 
     /**
      * 检查在第LINECOUNT 行中是否有超出的字符
-     *
      * @param tv_content
      * @param tv_showAll
      */
