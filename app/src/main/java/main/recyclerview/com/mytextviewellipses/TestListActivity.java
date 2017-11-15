@@ -136,8 +136,8 @@ public class TestListActivity extends AppCompatActivity {
                     DataModel dm = (DataModel) v.getTag();
                     if (dm.hasEllipsis) {
                         dm.isShowAll = !dm.isShowAll;
+                        adapter.notifyItemChanged(data.indexOf(dm));
                     }
-                    adapter.notifyItemChanged(data.indexOf(dm));
                 }
             });
         }
